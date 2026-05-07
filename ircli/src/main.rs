@@ -1,5 +1,7 @@
-use iridium::{Store, PlayerId};
+use iridium::SqliteStore;
 
-fn main () {
-    println!("hi");
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    let store = SqliteStore::open_default()?;
+
+    Ok(())
 }

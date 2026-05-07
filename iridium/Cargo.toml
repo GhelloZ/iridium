@@ -7,3 +7,5 @@ license = "MIT"
 [lib]
 
 [dependencies]
+rusqlite = { version = "0.39", features = ["bundled"] }
+dirs = "5"

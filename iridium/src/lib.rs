@@ -1,5 +1,6 @@
 pub mod model;
 pub mod store;
+pub mod sqlite;
 
 pub use model::{
     Deck,
@@ -13,3 +14,4 @@ pub use model::{
 };
 
 pub use store::Store;
+pub use sqlite::SqliteStore;
